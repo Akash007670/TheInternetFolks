@@ -15,14 +15,14 @@ import {
   NavBtnLink2,
 } from "../Navbar/NavbarElement";
 
-const Navbar = () => {
+const Navbar = ({mytoggleHandler}) => {
   return (
     <Nav>
       <Navbarcontainer>
         <Navlogo to="">
           <img src={ReactLogo} alt="react-logo" />
         </Navlogo>
-        <MobileIcon>
+        <MobileIcon onClick = {mytoggleHandler}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
