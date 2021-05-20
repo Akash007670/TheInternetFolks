@@ -53,7 +53,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 45%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -127,7 +127,7 @@ border-radius : 50px;
 color : white;
 background-color : #2acfcf;
 white-space : nowrap;
-padding : 10px 22px;
+padding : 10px 30px;
 font-size : 18px;
 cursor : pointer;
 text-decoration : none;
