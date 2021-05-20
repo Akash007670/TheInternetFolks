@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./components/Home";
 
 const App = () => {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Home />
       </Router>
     </div>
   );
