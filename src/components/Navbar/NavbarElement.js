@@ -3,8 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-router-dom";
 
 export const Nav = styled.nav`
-//   background : #000;
-  height: 80px;
+  height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,21 +21,20 @@ export const Navbarcontainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  // background-color : blue;
   height: 80px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1500px;
+  max-width: 1400px;
 `;
 
 export const Navlogo = styled(LinkR)`
   justify-self: start;
-  cursor: pointer;
   display: flex;
+  cursor: pointer;
   font-size: 18px;
   align-items: center;
-  //   margin-left: 24px;
-  //   font-weight: bold;
   text-decoration: none;
 
   @media screen and (max-width : 760px) {
@@ -67,7 +65,6 @@ export const NavMenu = styled.ul`
   width : 45vw;
   margin-right: 2rem;
   margin-left: 2rem;
-  cursor: pointer;
   font-weight : bold;
   font-size : 18px;
 
@@ -100,26 +97,29 @@ export const NavBtn1 = styled.nav`
   @media screen and (max-width : 760px) {
     display: none;
   }
-`;
-
-export const NavBtn2 = styled.nav`
+  `;
+  
+  export const NavBtn2 = styled.nav`
   display: flex;
   align-items: center;
-
-
+  
+  
   @media screen and (max-width : 760px) {
     display: none;
   }
-`;
-export const NavBtnLink1 = styled(LinkR)`
-border-radius : 50px;
-color : #bfbfbf;
-white-space : nowrap;
-padding : 10px 22px;
-font-size : 18px;
-cursor : pointer;
-text-decoration : none;
-`;
+  `;
+  export const NavBtnLink1 = styled(LinkR)`
+  border-radius : 50px;
+  color : #bfbfbf;
+  white-space : nowrap;
+  padding : 10px 22px;
+  font-size : 18px;
+  cursor : pointer;
+  text-decoration : none;
+  &:hover{
+    color : black;
+  }
+  `;
 
 
 export const NavBtnLink2 = styled(LinkR)`

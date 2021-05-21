@@ -19,7 +19,7 @@ const Navbar = ({mytoggleHandler}) => {
   return (
     <Nav>
       <Navbarcontainer>
-        <Navlogo to="">
+        <Navlogo>
           <img src={ReactLogo} alt="react-logo" />
         </Navlogo>
         <MobileIcon onClick = {mytoggleHandler}>
