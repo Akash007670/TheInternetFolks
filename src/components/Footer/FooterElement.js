@@ -9,8 +9,10 @@ export const FooterContainer = styled.div`
   padding-bottom: 1rem;
 
   @media screen and (max-width : 760px)      {
-      display : flex;
-      
+      display : none;
+      position : absolute;
+      margin-top : 20rem;
+      max-width : 100%none;
   }
 `;
 
@@ -24,14 +26,14 @@ export const Background = styled.div`
   background-color: #3b3054;
 
   @media screen and (max-width : 760px)      {
-      
+      display: flex;
 }
 `;
 
 export const GetStarted = styled.div`
   display: flex;
   @media screen and (max-width : 760px)      {
-      
+      display: flex;
 }
 `;
 
@@ -72,7 +74,7 @@ export const Btn = styled.button`
   margin-top: 6rem;
   margin-left: 35rem;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 
@@ -112,7 +114,8 @@ export const FooterItems = styled.div`
   margin-top: 4rem;
   margin-left: 9rem;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
+      /* margin-top: rem; */
 }
 `;
 
@@ -120,7 +123,7 @@ export const FooterHead = styled.h2`
   font-size: 18px;
   color: white;
   @media screen and (max-width : 760px)      {
-      
+      display: none;;
 }
 `;
 
@@ -134,7 +137,7 @@ export const FooterMenu1 = styled.ul`
   color: #bfbfbf;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 export const FooterMenu2 = styled.ul`
@@ -150,7 +153,7 @@ export const FooterMenu2 = styled.ul`
   color: #bfbfbf;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 export const FooterMenu3 = styled.ul`
@@ -166,14 +169,14 @@ export const FooterMenu3 = styled.ul`
   color: #bfbfbf;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display: flex;
 }
 `;
 
 export const FooterList = styled.li`
   height: 10px;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 
@@ -185,7 +188,7 @@ export const FooterLinks = styled.div`
   width: 18%;
   margin-left: 60rem;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 
@@ -198,7 +201,7 @@ export const FaceBookLogo = styled.div`
   margin-left: 1rem;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 export const TwitterLogo = styled.div`
@@ -210,7 +213,7 @@ export const TwitterLogo = styled.div`
   margin-left: 4rem;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 export const PinterestLogo = styled.div`
@@ -222,7 +225,7 @@ export const PinterestLogo = styled.div`
   margin-left: 7rem;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display: none;
 }
 `;
 export const InstaLogo = styled.div`
@@ -234,6 +237,6 @@ export const InstaLogo = styled.div`
   margin-left: 10rem;
   cursor: pointer;
   @media screen and (max-width : 760px)      {
-      
+      display:flex;
 }
 `;
