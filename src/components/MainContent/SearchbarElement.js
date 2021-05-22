@@ -9,7 +9,7 @@ export const Background = styled.div`
   position: sticky;
   border-radius: 20px;
   margin-bottom: 2rem;
-  z-index : 999;
+  z-index: 999;
 
   @media screen and (max-width: 760px) {
     display: flex;
@@ -20,7 +20,7 @@ export const Background = styled.div`
     position: absolute;
     left: -125px;
     margin-bottom: 2rem;
-    z-index : 0;
+    z-index: 0;
   }
 `;
 
@@ -83,20 +83,31 @@ export const Button = styled.button`
     display: flex;
     height: 40px;
     width: 90%;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
   }
 `;
 
 export const LinkList = styled.div`
   display: flex;
-  background-color: #EFF1F7;
+  background-color: #eff1f7;
   border-radius: 8px;
   margin-left: 9rem;
   margin-right: 12rem;
   margin-bottom: 2rem;
   height: 60px;
   align-items: center;
+
+  @media screen and (max-width: 760px) {
+    display: flex;
+    position: absolute;
+    margin-top: 15rem;
+    margin-left : 2rem;
+    margin-right : 2rem;
+    width: 90%;
+    z-index : 0;
+
+  }
 `;
 
 export const CopyBtn = styled.button`
@@ -113,14 +124,13 @@ export const CopyBtn = styled.button`
   border: none;
   right: 14.1rem;
   text-decoration: none;
-//   display: none;
-  // @media screen and (max-width : 760px) {
-  //     display : flex;
-  //     height : 40px;
-  //     width : 240px;
-  //     align-items : center;
-  //     justify-content : center;
-  // }
+  @media screen and (max-width: 760px) {
+    display: flex;
+    position :relative;
+    height: 40px;
+    width: 240px;
+    margin-left : 22rem;
+  
 `;
 
 export const CopiedBtn = styled.button`
@@ -136,18 +146,25 @@ export const CopiedBtn = styled.button`
   outline: none;
   border: none;
   text-decoration: none;
-  right: 14.1rem;
   // display : none;
 
-
-  // @media screen and (max-width : 760px) {
-  //     display : flex;
-  //     height : 40px;
-  //     width : 240px;
-  //     align-items : center;
-  //     justify-content : center;
-  // }
+   @media screen and (max-width : 760px) {
+      display : flex;
+      height : 40px;
+      width : 100px;
+      align-items : center;
+     justify-content : center;
+     margin-left : 22rem;
+   }
 `;
 export const Paragraph = styled.p`
-margin-left: 2em;
+  margin-left: 2em;
+
+  @media screen and (max-width : 760px) {
+    font-size : 10px;
+    display: flex;
+    position: absolute;
+    margin-top: 5rem;
+
+  }
 `;
