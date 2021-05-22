@@ -6,12 +6,12 @@ import { Link as LinkR } from "react-router-dom";
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 90%;
-  height: 80%;
+  width: 93%;
+  height: 90%;
   background-color: #3b3054;
   display: grid;
   align-items: center;
-  top: 6rem;
+  top: 1rem;
   left: 1.2rem;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
@@ -19,7 +19,7 @@ export const SidebarContainer = styled.aside`
   border-radius : 12px;
   margin-bottom : 10px;
   opacity : ${({isOpen}) => (isOpen ? '100%' : '0%')};
-  top : ${({isOpen}) => (isOpen ? '20%' : '-100%')};
+  top : ${({isOpen}) => (isOpen ? '15%' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaBars)`
@@ -31,7 +31,7 @@ export const Icon = styled.div`
   top: 1.2rem;
   right: 1.5rem;
   background: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   outline: none;
 `;
@@ -43,7 +43,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
 display : grid;
 grid-template-columns : 1fr;
-grid-template-rows : repeat(6,80px);
+grid-template-rows : repeat(5,50px);
 text-align : center;
 
 @media screen and (max-width : 480px) {
