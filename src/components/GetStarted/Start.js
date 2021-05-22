@@ -26,7 +26,7 @@ const Start = () => {
           </BtnWrapper>
         </ContentWrapper>
         <Person>
-          <img height = {400} width = {600} src={Workingperson} alt="working-person" />
+          <img src={Workingperson} alt="working-person" />
         </Person>
       </Description>
     </>
