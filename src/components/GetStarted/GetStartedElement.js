@@ -17,6 +17,7 @@ margin-top : 10px;
     align-items :  center;
     flex-direction : column;
     left : -10px;
+}
 `;
 
 export const ContentWrapper = styled.div`
@@ -91,7 +92,6 @@ border : none;
 text-decoration : none;
 `;
 export const Person = styled.div`
-// background-color : red;
 height : auto;
 width : auto;
 z-index : 1000;
@@ -100,10 +100,15 @@ position : relative;
 top : 2rem;
 left : 2rem;
 
-@media screen and (max-width : 760px) {
-    flex : 100;
-    order : 1; 
-    display : flex;
-    height : 80%;
+& img{
+    width: 100%;
 }
-`;
+
+@media screen and (max-width : 760px) {
+    display : flex;
+    height : 353px;
+    width : 440px;
+    color : #FFFFFF;
+    display : none;
+}
+`;  
