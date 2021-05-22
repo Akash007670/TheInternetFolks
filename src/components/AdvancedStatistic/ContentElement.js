@@ -13,7 +13,7 @@ background-color : #EFF1F7;
     z-index : 0;
     background-color : #EFF1F7;
     position : absolute;
-    margin-top : 48.5rem;
+    margin-top : 62rem;
     height : 1400px;
     width : 100%;
 }
