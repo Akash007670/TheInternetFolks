@@ -9,6 +9,7 @@ import {
   BtnWrapper,
   Button,
   ContentWrapper,
+  ContentWrapper2,
 } from "../GetStarted/GetStartedElement";
 
 const Start = () => {
@@ -25,9 +26,11 @@ const Start = () => {
             <Button to="Signup">Get Started</Button>
           </BtnWrapper>
         </ContentWrapper>
-        <Person>
-          <img src={Workingperson} alt="working-person" />
-        </Person>
+        <ContentWrapper2>
+          <Person>
+            <img src={Workingperson} alt="working-person" />
+          </Person>
+        </ContentWrapper2>
       </Description>
     </>
   );

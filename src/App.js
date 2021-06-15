@@ -7,7 +7,6 @@ import Searchbar from "./components/MainContent/Searchbar";
 import Content from "./components/AdvancedStatistic/Content";
 import Footer from "./components/Footer/Footer";
 
-
 const App = () => {
   return (
     <div className="App">
@@ -15,9 +14,9 @@ const App = () => {
         <Home />
         <Start />
       </Router>
-      <Searchbar />
+      {/* <Searchbar />
       <Content />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
