@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   justify-content: space-around;
   align-items: center;
   font-size: 18px;
-  position: sticky;
+  position: relative;
   z-index: 10;
 
   @media screen and (max-width: 960px) {

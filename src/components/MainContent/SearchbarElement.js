@@ -2,111 +2,94 @@ import styled from "styled-components";
 
 export const Background = styled.div`
   display: flex;
-  margin-top: 30rem;
-  margin-left: 9rem;
-  margin-right: 12rem;
+  position: relative;
+  margin: 3rem 12.5%;
+  max-width: 100%;
+  height: 10rem;
   background-color: #3b3054;
-  position: sticky;
-  border-radius: 20px;
-  margin-bottom: 2rem;
-  z-index: 999;
+  border-radius: 12px;
+
+  & img {
+    height: 155px;
+    width: 100%;
+  }
 
   @media screen and (max-width: 760px) {
-    display: flex;
-    flex: 100;
-    margin-top: 10px;
-    padding: 10px;
-    width: 90%;
-    position: absolute;
-    left: -125px;
+    margin-top: 1rem;
+    height: 10rem;
+    width: 100%;
+    max-width: 95%;
     margin-bottom: 2rem;
-    z-index: 0;
+    margin-left: 1rem;
+    & img {
+      height: auto;
+    }
   }
 `;
 
 export const SearchBar = styled.input`
   display: flex;
   position: absolute;
-  top: 2rem;
+  font-size: 20px;
   left: 2rem;
-  align-items: center;
-  justify-content: center;
-  border: none;
+  top: 3rem;
+  height: 40%;
+  width: 80%;
+  max-width: 65%;
+  border-radius: 8px;
   outline: none;
-  font-size: 18px;
-  width: 668px;
-  height: 40px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-
   @media screen and (max-width: 760px) {
-    display: flex;
-    width: 90%;
-    left: 2px;
     top: 1rem;
-    flex: 100;
-    order: 1;
-  }
-`;
-
-export const ButtonWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 2.3rem;
-  right: 2rem;
-  @media screen and (max-width: 760px) {
-    display: flex;
+    left: 1rem;
+    font-size: 18px;
     width: 100%;
-    flex: 100;
-    order: 2;
-    top: 100px;
-    left: 11px;
-    padding-bottom: 1.5rem;
+    max-width: 90%;
   }
 `;
 
 export const Button = styled.button`
+  display: flex;
+  position: absolute;
   border-radius: 8px;
   color: white;
   background-color: #2acfcf;
   white-space: nowrap;
-  padding: 10px 30px;
+  padding: 16px 30px;
   font-size: 18px;
   cursor: pointer;
   outline: none;
   border: none;
   text-decoration: none;
+  margin-left: 76%;
+  margin-top: 3rem;
   @media screen and (max-width: 760px) {
-    display: flex;
-    height: 40px;
-    width: 90%;
-    /* align-items: center;
-    justify-content: center; */
+    top: 2.5rem;
+    right: 1rem;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
   }
 `;
 
 export const LinkList = styled.div`
   display: flex;
+  position: relative;
   background-color: #eff1f7;
-  border-radius: 8px;
-  margin-left: 9rem;
-  margin-right: 12rem;
-  margin-bottom: 2rem;
-  height: 60px;
   align-items: center;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 2rem 12rem;
 
   @media screen and (max-width: 760px) {
     display: flex;
-    position: absolute;
-    margin-top: 15rem;
-    margin-left : 2rem;
-    margin-right : 2rem;
-    width: 90%;
-    z-index : 0;
-
+    position: relative;
+    margin: 1rem 1rem;
+    width: 100%;
+    max-width: 95%;
+    z-index: 0;
   }
 `;
 
@@ -122,49 +105,19 @@ export const CopyBtn = styled.button`
   cursor: pointer;
   outline: none;
   border: none;
-  right: 14.1rem;
+  right: 8rem;
   text-decoration: none;
   @media screen and (max-width: 760px) {
-    display: flex;
-    position :relative;
-    height: 40px;
-    width: 240px;
-    margin-left : 22rem;
-  
+    right: 1rem;
+  }
 `;
 
-export const CopiedBtn = styled.button`
-  display: flex;
-  position: absolute;
-  border-radius: 8px;
-  color: white;
-  background-color: #2acfcf;
-  white-space: nowrap;
-  padding: 10px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  // display : none;
-
-   @media screen and (max-width : 760px) {
-      display : flex;
-      height : 40px;
-      width : 100px;
-      align-items : center;
-     justify-content : center;
-     margin-left : 22rem;
-   }
-`;
 export const Paragraph = styled.p`
-  margin-left: 2em;
-
-  @media screen and (max-width : 760px) {
-    font-size : 10px;
-    display: flex;
-    position: absolute;
-    margin-top: 5rem;
-
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 760px) {
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
   }
 `;

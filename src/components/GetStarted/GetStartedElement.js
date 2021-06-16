@@ -19,7 +19,7 @@ export const ContentWrapper = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 13%;
-  margin-right: 1rem;
+  margin-right: 3rem;
   width: auto;
   @media screen and (max-width: 760px) {
     display: flex;
@@ -54,12 +54,14 @@ export const Para = styled.p`
   text-align: start;
   font-size: 18px;
   // background-color : yellow;
+  margin-right: 3rem;
   color: #bfbfbf;
   max-width: auto;
 
   @media screen and (max-width: 760px) {
     font-size: 10px;
     text-align: center;
+    margin-left: 2rem;
   }
 `;
 
