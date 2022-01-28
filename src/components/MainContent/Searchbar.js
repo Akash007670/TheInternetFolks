@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import bgshorten from "../assets/images/bg-shorten-desktop.svg";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
+  Flex,
   Background,
   SearchBar,
   Button,
   LinkList,
   CopyBtn,
+  GivenLink,
   Paragraph,
+  LinkContainer,
 } from "../MainContent/SearchbarElement";
 
 const Searchbar = () => {
@@ -42,9 +44,8 @@ const Searchbar = () => {
   };
 
   return (
-    <>
+    <Flex>
       <Background>
-        <img src={bgshorten} alt="bg-short" />
         <SearchBar
           input
           type="text"
@@ -56,19 +57,21 @@ const Searchbar = () => {
           {loading ? "Shortening...." : "Shorten It!"}
         </Button>
       </Background>
-
-      <LinkList>
-        <Paragraph>
-          {response ? response?.result?.short_link : "Please add a link"}
-        </Paragraph>
-        <CopyToClipboard
-          text={response?.result?.short_link}
-          onCopy={() => setCopied(true)}
-        >
-          <CopyBtn>{copied ? "Copied" : "Copy"}</CopyBtn>
-        </CopyToClipboard>
-      </LinkList>
-    </>
+      {response ? (
+        <LinkList>
+          <GivenLink>{response?.result?.original_link}</GivenLink>
+          <LinkContainer>
+            <Paragraph>{response?.result?.short_link}</Paragraph>
+            <CopyToClipboard
+              text={response?.result?.short_link}
+              onCopy={() => setCopied(true)}
+            >
+              <CopyBtn>{copied ? "Copied" : "Copy"}</CopyBtn>
+            </CopyToClipboard>
+          </LinkContainer>
+        </LinkList>
+      ) : null}
+    </Flex>
   );
 };
 
