@@ -8,7 +8,7 @@ export const Description = styled.div`
   justify-content: space-between;
   display: flex;
   align-items: center;
-  margin: 3rem auto;
+  margin: 3rem auto 5rem;
   /* border: 2px solid red; */
   @media screen and (max-width: 850px) {
     display: flex;
@@ -25,6 +25,19 @@ export const ContentWrapper = styled.div`
   width: 40%;
   height: 100%;
   padding: 0 60px;
+  animation: moveTop 1s ease-out;
+
+  @keyframes moveTop {
+    0% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   @media screen and (max-width: 850px) {
     display: flex;
     width: 100%;
