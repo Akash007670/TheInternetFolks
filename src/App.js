@@ -14,9 +14,9 @@ const App = () => {
         <Home />
         <Start />
       </Router>
-      <Searchbar />
+      {/* <Searchbar />
       <Content />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-router-dom";
 
 export const Nav = styled.nav`
   display: flex;
-  top: 2rem;
+  margin-top: 1rem;
   justify-content: space-around;
   align-items: center;
   font-size: 18px;
@@ -18,25 +18,28 @@ export const Nav = styled.nav`
 
 export const Navbarcontainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  // background-color : blue;
+  /* border: 2px solid red; */
   height: 80px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1200px;
+  max-width: 1600px;
 `;
 
 export const Navlogo = styled(LinkR)`
   justify-self: start;
   display: flex;
   cursor: pointer;
-  font-size: 18px;
   align-items: center;
   text-decoration: none;
 
-  @media screen and (max-width: 760px) {
+  & img {
+    height: 40px;
+  }
+
+  @media screen and (max-width: 850px) {
     position: absolute;
     top: 20px;
     left: 15px;
@@ -45,7 +48,7 @@ export const Navlogo = styled(LinkR)`
 `;
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 850px) {
     display: block;
     position: absolute;
     top: 0;
@@ -65,9 +68,9 @@ export const NavMenu = styled.ul`
   margin-right: 2rem;
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -85,14 +88,20 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   &:hover {
-    color: black;
+    color: #737373;
   }
+`;
+
+export const NavButtons = styled.div`
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
 `;
 
 export const NavBtn1 = styled.nav`
   display: flex;
   align-items: center;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -101,7 +110,7 @@ export const NavBtn2 = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -114,7 +123,7 @@ export const NavBtnLink1 = styled(LinkR)`
   cursor: pointer;
   text-decoration: none;
   &:hover {
-    color: black;
+    color: #737373;
   }
 `;
 

@@ -3,35 +3,39 @@ import styled from "styled-components";
 export const Description = styled.div`
   z-index: 3;
   width: 100%;
+  height: 55vh;
   max-width: 1600px;
-  position: relative;
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  margin-top: 3rem;
-  @media screen and (max-width: 760px) {
+  margin: 3rem auto;
+  /* border: 2px solid red; */
+  @media screen and (max-width: 850px) {
     display: flex;
+    height: 100%;
     flex-direction: column;
   }
 `;
 
 export const ContentWrapper = styled.div`
   display: flex;
+  /* border: 2px solid green; */
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-left: 13%;
-  margin-right: 3rem;
-  width: auto;
-  @media screen and (max-width: 760px) {
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  padding: 0 60px;
+  @media screen and (max-width: 850px) {
     display: flex;
+    width: 100%;
     order: 2;
   }
 `;
 export const ContentWrapper2 = styled.div`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: auto;
-  @media screen and (max-width: 760px) {
+  height: 100%;
+  /* border: 2px solid blue; */
+  @media screen and (max-width: 850px) {
     display: flex;
     height: fit-content;
     margin-bottom: 2rem;
@@ -41,27 +45,34 @@ export const ContentWrapper2 = styled.div`
 
 export const Heading = styled.h1`
   text-align: start;
+  flex-wrap: wrap;
   color: black;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: bold;
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1200px) {
+    text-align: start;
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: 850px) {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
   }
 `;
 
 export const Para = styled.p`
-  text-align: start;
-  font-size: 18px;
-  // background-color : yellow;
-  margin-right: 3rem;
+  font-size: 20px;
   color: #bfbfbf;
-  max-width: auto;
+  margin-bottom: 10px;
 
-  @media screen and (max-width: 760px) {
-    font-size: 10px;
+  @media screen and (max-width: 1200px) {
+    text-align: start;
+    font-size: 15px;
+  }
+  @media screen and (max-width: 850px) {
+    font-size: 15px;
     text-align: center;
-    margin-left: 2rem;
   }
 `;
 
@@ -71,7 +82,10 @@ export const BtnWrapper = styled.div`
   flex-direction: column;
   align-items: start;
   cursor: pointer;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 1200px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 850px) {
     align-items: center;
     padding-bottom: 22px;
   }
@@ -83,21 +97,34 @@ export const Button = styled.button`
   background-color: #2acfcf;
   white-space: nowrap;
   padding: 10px 30px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   outline: none;
   border: none;
   text-decoration: none;
+  @media screen and (max-width: 850px) {
+    font-size: 18px;
+  }
 `;
 export const Person = styled.div`
   position: relative;
+  & img {
+    height: auto;
+    width: auto;
+    background-size: cover;
+  }
+  @media screen and (max-width: 1200px) {
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 850px) {
     & img {
       position: relative;
-      left: 3rem;
-      height: 90%;
-      width: 90%;
+      height: 100%;
+      width: 100%;
     }
   }
 `;

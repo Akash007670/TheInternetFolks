@@ -13,16 +13,19 @@ import {
   NavBtn2,
   NavBtnLink1,
   NavBtnLink2,
+  NavButtons,
 } from "../Navbar/NavbarElement";
 
-const Navbar = ({mytoggleHandler}) => {
+const Navbar = ({ mytoggleHandler }) => {
   return (
     <Nav>
       <Navbarcontainer>
         <Navlogo>
-          <img src={ReactLogo} alt="react-logo" />
+          <NavLinks to="/">
+            <img src={ReactLogo} alt="react-logo" />
+          </NavLinks>
         </Navlogo>
-        <MobileIcon onClick = {mytoggleHandler}>
+        <MobileIcon onClick={mytoggleHandler}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
@@ -36,12 +39,14 @@ const Navbar = ({mytoggleHandler}) => {
             <NavLinks to="Resources">Resources</NavLinks>
           </NavItem>
         </NavMenu>
-        <NavBtn1>
-          <NavBtnLink1 to="Login">Login</NavBtnLink1>
-        </NavBtn1>
-        <NavBtn2>
-          <NavBtnLink2 to="Signup">Sign Up</NavBtnLink2>
-        </NavBtn2>
+        <NavButtons>
+          <NavBtn1>
+            <NavBtnLink1 to="Login">Login</NavBtnLink1>
+          </NavBtn1>
+          <NavBtn2>
+            <NavBtnLink2 to="Signup">Sign Up</NavBtnLink2>
+          </NavBtn2>
+        </NavButtons>
       </Navbarcontainer>
     </Nav>
   );
