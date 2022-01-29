@@ -83,7 +83,7 @@ export const Button = styled.button`
 export const LinkList = styled.div`
   display: flex;
   background-color: white;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   margin: 7rem auto 2rem;
   width: 90%;
   max-width: 1500px;

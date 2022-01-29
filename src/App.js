@@ -16,7 +16,7 @@ const App = () => {
       </Router>
       <Searchbar />
       <Content />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

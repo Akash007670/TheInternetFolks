@@ -5,8 +5,8 @@ import Pinterest from "../assets/images/icon-pinterest.svg";
 import Instagram from "../assets/images/icon-instagram.svg";
 
 import {
+  FooterTitle,
   FooterContainer,
-  Background,
   MainFooter,
   Btn,
   Head,
@@ -14,27 +14,18 @@ import {
   FooterItems,
   FooterHead,
   FooterMenu1,
-  FooterMenu2,
-  FooterMenu3,
   FooterList,
   FooterLinks,
-  FaceBookLogo,
-  TwitterLogo,
-  PinterestLogo,
-  InstaLogo,
+  LinksLogo,
 } from "../Footer/FooterElement";
-import BgBoost from "../assets/images/bg-boost-desktop.svg";
 
 const Footer = () => {
   return (
-    <>
-      <FooterContainer>
-        <Background>
-          <img src={BgBoost} alt="bg-boost" />
-        </Background>
+    <FooterContainer>
+      <FooterTitle>
         <Head>Boost your links today</Head>
         <Btn>Get Started</Btn>
-      </FooterContainer>
+      </FooterTitle>
       <MainFooter>
         <Logo>Shortly</Logo>
         <FooterItems>
@@ -44,36 +35,36 @@ const Footer = () => {
             <FooterList>Branded Links</FooterList>
             <FooterList>Analytics</FooterList>
           </FooterMenu1>
-          <FooterMenu2>
+          <FooterMenu1>
             <FooterHead>Resources</FooterHead>
             <FooterList>Blog</FooterList>
             <FooterList>Developers</FooterList>
             <FooterList>Support</FooterList>
-          </FooterMenu2>
-          <FooterMenu3>
+          </FooterMenu1>
+          <FooterMenu1>
             <FooterHead>Company</FooterHead>
             <FooterList>About</FooterList>
             <FooterList>Our Team</FooterList>
             <FooterList>Carrers</FooterList>
             <FooterList>Contacts</FooterList>
-          </FooterMenu3>
+          </FooterMenu1>
         </FooterItems>
         <FooterLinks>
-          <FaceBookLogo>
+          <LinksLogo>
             <img src={Facebook} alt="facbook" />
-          </FaceBookLogo>
-          <TwitterLogo>
+          </LinksLogo>
+          <LinksLogo>
             <img src={Twitter} alt="twitter" />
-          </TwitterLogo>
-          <PinterestLogo>
+          </LinksLogo>
+          <LinksLogo>
             <img src={Pinterest} alt="pinterest" />
-          </PinterestLogo>
-          <InstaLogo>
+          </LinksLogo>
+          <LinksLogo>
             <img src={Instagram} alt="instagram" />
-          </InstaLogo>
+          </LinksLogo>
         </FooterLinks>
       </MainFooter>
-    </>
+    </FooterContainer>
   );
 };
 

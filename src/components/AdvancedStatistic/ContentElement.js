@@ -76,6 +76,7 @@ export const CardsWrapper = styled.div`
   @media screen and (max-width: 850px) {
     flex-direction: column;
     height: 100%;
+    padding-bottom: 2rem;
   }
 `;
 
