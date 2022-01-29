@@ -15,8 +15,8 @@ const App = () => {
         <Start />
       </Router>
       <Searchbar />
-      {/* <Content />
-      <Footer /> */}
+      <Content />
+      {/* <Footer /> */}
     </div>
   );
 };
