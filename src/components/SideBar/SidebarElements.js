@@ -1,54 +1,36 @@
 import styled from "styled-components";
-import { FaBars } from "react-icons/fa";
 import { Link as LinkS } from "react-router-dom";
 import { Link as LinkR } from "react-router-dom";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 93%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-color: #3b3054;
-  display: grid;
   align-items: center;
-  top: 1rem;
-  left: 1.2rem;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
-  font-weight : bold;
-  border-radius : 12px;
-  margin-bottom : 10px;
-  opacity : ${({isOpen}) => (isOpen ? '100%' : '0%')};
-  top : ${({isOpen}) => (isOpen ? '15%' : '-100%')};
-`;
-
-export const CloseIcon = styled(FaBars)`
-  color: gray;
-`;
-
-export const Icon = styled.div`
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  background: transparent;
-  font-size: 1.5rem;
-  cursor: pointer;
-  outline: none;
+  font-weight: bold;
+  border-radius: 12px;
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
+  top: ${({ isOpen }) => (isOpen ? "10%" : "-100%")};
 `;
 
 export const SidebarWrapper = styled.div`
-  color: black;
+  transform: translateY(10rem);
+  /* border: 2px solid red; */
 `;
 
 export const SidebarMenu = styled.ul`
-display : grid;
-grid-template-columns : 1fr;
-grid-template-rows : repeat(5,50px);
-text-align : center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 50px);
+  text-align: center;
 
-@media screen and (max-width : 480px) {
-    grid-template-rows : repeat(5,70px);
-}
+  @media screen and (max-width: 480px) {
+    grid-template-rows: repeat(5, 70px);
+  }
 `;
 
 export const SidebarLink = styled(LinkS)`
@@ -58,14 +40,12 @@ export const SidebarLink = styled(LinkS)`
   font-size: 18px;
   text-decoration: none;
   list-style: none;
-  transition: all 0.2s ease-in-out;
   color: white;
   cursor: pointer;
   font-weight: bold;
 
   &:hover {
-    color: black;
-    transition: all 0.2s ease-in-out;
+    color: #bfbfbf;
   }
 `;
 
@@ -87,34 +67,25 @@ export const SidebarRoute1 = styled(LinkR)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration : none;
-
-  &:hover {
-      transition :  all 0.2s ease-in-out;
-      color : white;
-  }
-
-  @media screen and (max-width : 760px) {
-    padding : 8px;
-  }
+  margin-bottom: 1rem;
+  text-decoration: none;
 `;
 
 export const SidebarRoute2 = styled(LinkR)`
   border-radius: 50px;
-  background-color: #2acfcf; 
+  background-color: #2acfcf;
   white-space: nowrap;
   padding: 16px 64px;
+  width: 60%;
   color: white;
   font-size: 18px;
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration : none;
-  margin-bottom : 60px;
-
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
   &:hover {
-      transition :  all 0.2s ease-in-out;   
+    background-color: #29c7c7;
   }
 `;

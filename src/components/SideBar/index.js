@@ -10,15 +10,21 @@ import {
   SidebarRoute2,
 } from "../SideBar/SidebarElements";
 
-const Sidebar = ({isOpen , mytoggleHandler}) => {
+const Sidebar = ({ isOpen, mytoggleHandler }) => {
   return (
     <>
-      <SidebarContainer isOpen = {isOpen} onClick = {mytoggleHandler}>
+      <SidebarContainer isOpen={isOpen} onClick={mytoggleHandler}>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="Features" onClick = {mytoggleHandler}>Features</SidebarLink>
-            <SidebarLink to="Pricing" onClick = {mytoggleHandler}>Pricing</SidebarLink>
-            <SidebarLink to="Resources" onClick = {mytoggleHandler}>Resources</SidebarLink>
+            <SidebarLink to="Features" onClick={mytoggleHandler}>
+              Features
+            </SidebarLink>
+            <SidebarLink to="Pricing" onClick={mytoggleHandler}>
+              Pricing
+            </SidebarLink>
+            <SidebarLink to="Resources" onClick={mytoggleHandler}>
+              Resources
+            </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap1>
             <SidebarRoute1 to="Login">Login</SidebarRoute1>
