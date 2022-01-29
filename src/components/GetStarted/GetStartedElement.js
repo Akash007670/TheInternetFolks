@@ -25,7 +25,7 @@ export const ContentWrapper = styled.div`
   width: 40%;
   height: 100%;
   padding: 0 60px;
-  animation: moveTop 1s ease-out;
+  animation: moveTop 1s ease-in-out;
 
   @keyframes moveTop {
     0% {
@@ -48,11 +48,23 @@ export const ContentWrapper2 = styled.div`
   display: flex;
   height: 100%;
   /* border: 2px solid blue; */
+  animation: moveRightToLeft 1s ease-in-out;
+  @keyframes moveRightToLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   @media screen and (max-width: 850px) {
     display: flex;
     height: fit-content;
     margin-bottom: 2rem;
     order: 1;
+    animation: moveTop 1s ease-in-out;
   }
 `;
 
@@ -115,6 +127,9 @@ export const Button = styled.button`
   outline: none;
   border: none;
   text-decoration: none;
+  &:hover {
+    background-color: #2ac3c3;
+  }
   @media screen and (max-width: 850px) {
     font-size: 18px;
   }

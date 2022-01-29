@@ -136,4 +136,7 @@ export const NavBtnLink2 = styled(LinkR)`
   font-size: 18px;
   cursor: pointer;
   text-decoration: none;
+  &:hover {
+    background-color: #2ac3c3;
+  }
 `;

@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Flex = styled.div`
-  /* background-color:  */
   background-color: #eff1f7;
   border: 2px solid #eff1f7;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 30vh;
 `;
 
 export const Background = styled.div`
@@ -16,7 +15,7 @@ export const Background = styled.div`
   justify-content: space-evenly;
   width: 90%;
   max-width: 1500px;
-  top: -8%;
+  top: -30%;
   left: 50%;
   transform: translate(-50%, 0);
   height: 10rem;
@@ -69,6 +68,9 @@ export const Button = styled.button`
   outline: none;
   border: none;
   text-decoration: none;
+  &:hover {
+    background-color: #2ac3c3;
+  }
   @media screen and (max-width: 1200px) {
     width: 15%;
   }
@@ -81,7 +83,7 @@ export const Button = styled.button`
 export const LinkList = styled.div`
   display: flex;
   background-color: white;
-  /* border: 2px solid green; */
+  border: 2px solid green;
   margin: 7rem auto 2rem;
   width: 90%;
   max-width: 1500px;
@@ -171,6 +173,9 @@ export const CopyBtn = styled.button`
   outline: none;
   border: none;
   text-decoration: none;
+  &:hover {
+    background-color: #2ac3c3;
+  }
   @media screen and (max-width: 850px) {
     width: 100%;
     justify-content: center;
